@@ -122,6 +122,7 @@ class PetController {
 		}
 
 		try {
+			pet.setOwner(owner);
 			owner.addPet(pet);
 			this.owners.saveAndFlush(owner);
 		}
